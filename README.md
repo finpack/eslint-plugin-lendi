@@ -20,12 +20,12 @@ $ npm install eslint-plugin-lendi --save-dev
 
 ## Usage
 
-Add `lendi-eslint-plugin` to the plugins section of your `.eslintrc` configuration file. You can omit the `eslint-plugin-lendi` prefix:
+Add `lendi-eslint-plugin` to the plugins section of your `.eslintrc` configuration file:
 
 ```json
 {
-    "plugins": [
-        "lendi-eslint-plugin"
+    "extends": [
+        "plugin:lendi/standard"
     ]
 }
 ```
