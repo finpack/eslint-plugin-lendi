@@ -1,0 +1,26 @@
+{
+    "author": {
+    "name": "Konrad"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
+  "description": "Lendi plugin",
+  "devDependencies": {
+    "eslint": "^7.6.0",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-vue": "6.2.2",
+    "eslint-loader": "4.0.2"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "license": "ISC",
+  "main": "lib/index.js",
+  "name": "eslint-plugin-lendi",
+  "version": "1.0.6"
+}
