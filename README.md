@@ -31,9 +31,11 @@ Add `lendi-eslint-plugin` to the plugins section of your `.eslintrc` configurati
 ```
 
 ## Changlog
+`1.1.8`: add new spacing rules
 `1.0.3`: add eslint `no-magic-numbers: ["error", { "enforceConst": true }]`
 
-
+## How to push to npm
+Just use `npm push`
 
 
 
