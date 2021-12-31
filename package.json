@@ -1,5 +1,5 @@
 {
-  "version": "1.1.8",
+  "version": "1.1.9",
   "author": {
     "name": "Konrad"
   },
@@ -7,19 +7,19 @@
   "deprecated": false,
   "description": "Lendi plugin",
   "dependencies": {
+    "@typescript-eslint/eslint-plugin": "4.4.1",
+    "@typescript-eslint/parser": "4.4.1",
+    "@vue/eslint-config-standard": "5.1.2",
+    "@vue/eslint-config-typescript": "7.0.0",
     "babel-eslint": "10.1.0",
     "eslint": "7.11.0",
-    "eslint-plugin-standard": "4.0.1",
-    "eslint-plugin-vue": "7.0.1",
-    "eslint-plugin-node": "11.1.0",
     "eslint-loader": "4.0.2",
-    "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-cypress": "2.11.2",
-    "@typescript-eslint/parser": "4.4.1",
-    "@typescript-eslint/eslint-plugin": "4.4.1",
-    "@vue/eslint-config-standard": "5.1.2",
     "eslint-plugin-import": "2.22.1",
-    "@vue/eslint-config-typescript": "7.0.0"
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-vue": "7.0.1"
   },
   "engines": {
     "node": ">=0.10.0"
