@@ -20,7 +20,7 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: get-npm-version
       id: package-version
-      uses: martinbeentjes/npm-get-version-action@v1
+      uses: martinbeentjes/npm-get-version-action@v1.1.0
     - name: Slack Notification
       uses: rtCamp/action-slack-notify@v2
       env:
