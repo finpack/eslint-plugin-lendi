@@ -1,0 +1,4 @@
+# This is a CODEOWNERS file.
+
+# The following line assigns ownership of all files in the .github/workflows directory to @finpack/devops
+.github/**        @finpack/devops
