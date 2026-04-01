@@ -14,8 +14,8 @@ jobs:
         node-version: [12.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v2
+    - uses: actions/checkout@ee0669bd1cc54295c223e0bb666b733df41de1c5 # v2.7.0
+    - uses: actions/setup-node@7c12f8017d5436eb855f1ed4399f037a36fbd9e8 # v2.5.2
       with:
         node-version: '16.x'
         registry-url: 'https://registry.npmjs.org'
@@ -28,15 +28,15 @@ jobs:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: get-npm-version
       id: package-version
-      uses: martinbeentjes/npm-get-version-action@v1.1.0
+      uses: martinbeentjes/npm-get-version-action@95bc31c6dd3145896c110e382f840bb1e750d09c # v1.1.0
     - name: Slack Notification
-      uses: rtCamp/action-slack-notify@v2
+      uses: rtCamp/action-slack-notify@e31e87e03dd19038e411e38ae27cbad084a90661 # v2.3.3
       env:
         SLACK_WEBHOOK: ${{ secrets.SLACK_NPM_PUBLISH_WEBHOOK }}
         SLACK_TITLE: "New version of eslint-plugin-lendi has been published: ${{steps.package-version.outputs.current-version}}"
     - name: Report Status
       if: always()
-      uses: ravsamhq/notify-slack-action@v1
+      uses: ravsamhq/notify-slack-action@4ed28566c2bdcdaee6dca2b46b9666d01b4ed8a4 # v1.10.0
       with:
         status: ${{ job.status }}
         notification_title: 'eslint-plugin-lendi ${{steps.package-version.outputs.current-version}} has failed.'
