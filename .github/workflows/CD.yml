@@ -36,7 +36,7 @@ jobs:
         SLACK_TITLE: "New version of eslint-plugin-lendi has been published: ${{steps.package-version.outputs.current-version}}"
     - name: Report Status
       if: always()
-      uses: ravsamhq/notify-slack-action@4ed28566c2bdcdaee6dca2b46b9666d01b4ed8a4 # v1.10.0
+      uses: ravsamhq/notify-slack-action@be814b201e233b2dc673608aa46e5447c8ab13f2 # v2.5.0
       with:
         status: ${{ job.status }}
         notification_title: 'eslint-plugin-lendi ${{steps.package-version.outputs.current-version}} has failed.'
